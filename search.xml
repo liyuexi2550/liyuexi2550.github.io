@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/03/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>my first post</title>
+    <url>/2023/03/03/my-first-post/</url>
+    <content><![CDATA[<p>This is my first post.I write the post to remember this exciting moment….</p>
+]]></content>
+      <categories>
+        <category>杂项</category>
+      </categories>
+      <tags>
+        <tag>其它</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【尚硅谷】Java核心基础之day00_计算机基础知识--学习笔记</title>
     <url>/2023/03/06/%E3%80%90%E5%B0%9A%E7%A1%85%E8%B0%B7%E3%80%91Java%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%A1%80%E4%B9%8Bday00-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="day00-编程入门（内容来源于尚硅谷）"><a href="#day00-编程入门（内容来源于尚硅谷）" class="headerlink" title="day00_编程入门（内容来源于尚硅谷）"></a>day00_编程入门（内容来源于尚硅谷）</h1><h2 id="0-1-概述"><a href="#0-1-概述" class="headerlink" title="0.1 概述"></a>0.1 概述</h2><p>计算机包括<strong>硬件(hardware)</strong> 和<strong>软件(software)</strong> 两部分。硬件包括计算机中看得见的物理部分，而软件提供看不见的指令。这些指令控制硬件并且使得硬件完成特定的任务。</p>
@@ -27,68 +53,59 @@
 </ul>
 <h2 id="0-2-计算机硬件介绍"><a href="#0-2-计算机硬件介绍" class="headerlink" title="0.2 计算机硬件介绍"></a>0.2 计算机硬件介绍</h2><p><img src="https://img-blog.csdnimg.cn/11fd8f14066c40d59a30f4c22387a53f.jpeg#pic_center" alt="计算机硬件组成"></p>
 <center><b>图0-1 计算机硬件组成</b></center>
-<br/>
-在个人计算机上，总线搭建在主板上，主板是一个连接计算机各个部分的电路板。
-<br/>
-<br/>
 
-![冯诺依曼体系结构](https://img-blog.csdnimg.cn/7f650258a2994ca5bce5ae9788dce4ae.png#pic_center)
+<p>在个人计算机上，总线搭建在主板上，主板是一个连接计算机各个部分的电路板。</p>
+<p><img src="https://img-blog.csdnimg.cn/7f650258a2994ca5bce5ae9788dce4ae.png#pic_center" alt="冯诺依曼体系结构"></p>
 <center><b>图0-2 冯 • 诺依曼体系结构(源于尚硅谷)</b></center>
-<br/>
 
-**冯 • 诺依曼体系结构**是现代计算机的基础,现在大多数计算机仍是冯诺伊曼计算机的组织结构，只是作了一点改进而已，并没有从根本上突破冯体系结构的束缚。冯 • 诺依曼也因此被人们称为“计算机之父”。
-
-### 0.2.1 中央处理器 
-
-- **中央处理器(Central Processing Unit,CPU)** 是计算机的大脑。它从内存中获取指令，然后执行这些指令。
-包括：**控制单元(control unit)** 和**算术/逻辑单元(arithmetic/logic unit)**。
-   - 控制单元：用于控制和协调其他组件的动作。
-   - 算数/逻辑单元：用于完成数值运算(+、-、*、/)和逻辑运算(比较)。
-
-![CPU](https://img-blog.csdnimg.cn/c990d7551429446e9c14aaffd5a498a6.jpeg#pic_center)
+<p><strong>冯 • 诺依曼体系结构</strong>是现代计算机的基础,现在大多数计算机仍是冯诺伊曼计算机的组织结构，只是作了一点改进而已，并没有从根本上突破冯体系结构的束缚。冯 • 诺依曼也因此被人们称为“计算机之父”。</p>
+<h3 id="0-2-1-中央处理器"><a href="#0-2-1-中央处理器" class="headerlink" title="0.2.1 中央处理器"></a>0.2.1 中央处理器</h3><ul>
+<li><strong>中央处理器(Central Processing Unit,CPU)</strong> 是计算机的大脑。它从内存中获取指令，然后执行这些指令。<br>包括：<strong>控制单元(control unit)</strong> 和<strong>算术/逻辑单元(arithmetic/logic unit)</strong>。<ul>
+<li>控制单元：用于控制和协调其他组件的动作。</li>
+<li>算数/逻辑单元：用于完成数值运算(+、-、*、/)和逻辑运算(比较)。</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/c990d7551429446e9c14aaffd5a498a6.jpeg#pic_center" alt="CPU"></p>
 <center><b>图0-3 CPU</b></center>
-<br/>
 
- - 每台计算机都有一个内部时钟，该时钟以固定速度发射电子脉冲。时钟速度越快，在给定的时间段内执行的指令就越多。速度的计量单位是**赫兹(Hz)**。1Hz相当于每秒1个脉冲。随着CPU速度不断提高，目前以吉兆赫(GHz)来表述。
-
-- 最初一个CPU只有一个**核(core)**，核是处理中实现指令读取和执行的部分。一个多核CPU是一个具有两个或者更多独立核的组件，可提高CPU的处理能力。
-
-- 现在的CPU都是构建在一块小小的硅半导体芯片上，这块芯片上包含数百万称为晶体管的小电路开关上，用于处理信息。
-
-- 1KHz = 1024Hz
-1MHz = 1024KHz
-1GHz = 1024MHz
-
+<ul>
+<li><p>每台计算机都有一个内部时钟，该时钟以固定速度发射电子脉冲。时钟速度越快，在给定的时间段内执行的指令就越多。速度的计量单位是<strong>赫兹(Hz)</strong>。1Hz相当于每秒1个脉冲。随着CPU速度不断提高，目前以吉兆赫(GHz)来表述。</p>
+</li>
+<li><p>最初一个CPU只有一个<strong>核(core)</strong>，核是处理中实现指令读取和执行的部分。一个多核CPU是一个具有两个或者更多独立核的组件，可提高CPU的处理能力。</p>
+</li>
+<li><p>现在的CPU都是构建在一块小小的硅半导体芯片上，这块芯片上包含数百万称为晶体管的小电路开关上，用于处理信息。</p>
+</li>
+<li><p>1KHz = 1024Hz<br>1MHz = 1024KHz<br>1GHz = 1024MHz</p>
+</li>
+</ul>
 <h4> IT定律之计算机行业发展规律</h4>
 
-- **摩尔定律(Moore's Law)**
-- **安迪-比尔定律(Andy and Bill's Law)**
-- **反摩尔定律(Reverse Moore's Law)**
-
-1. 摩尔定律(Moore's Law)是由英特尔(Intel)创始人之一戈登·摩尔(Gordon Moore)提出来的。其内容为：当价格不变时，集成电路上可容纳的元器件的数目，约每隔18-24个月便会增加一倍，性能也将提升一倍。换言之，每一美元所能买到的电脑性能，将每隔18-24个月翻一倍以上。
-2. 安迪-比尔定律(Andy and Bill's Law)描述了硬件产商和软件产商之间的关系。即比尔要拿走安迪所给的(What Andy gives,Bill takes away)。个人电脑工业整个的生态链是这样，以微软为首的软件开发商吃掉硬件提升带来的全部好处，迫使用户更新让惠普和戴尔等公司受益，而这些整机生产厂商再向英特尔这样的半导体厂订货购买新的芯片，同时向Seagate等外设厂购买新的外设。在这中间，各家的利润先后得到相应的提升，股票也随着增长。各个硬件半导体和外设公司再将利润投入研发，按照摩尔定理制定的速度，提升硬件性能，为微软下一步更新软件、吃掉硬件性能做准备。当然，微软和其它软件开发商在吃掉大部分硬件提升好处的同时，或多或少地给用户带来一些新东西。
-3. 反摩尔定律(Reverse Moore's Law)是Google的前CEO埃里克·施密特提出的，如果你反过来看摩尔定律，一个IT公司如果今天和18个月前卖掉同样多的、同样的产品，它的营业额就要降一半。IT界把它称为反摩尔定律。反摩尔定律对于所有的IT公司来讲，都是非常可怕的，因为一个IT公司花了同样的劳动，却只得到以前一半的收入，反摩尔定律逼着所有的硬件设备公司必须赶上摩尔定律所规定的更新速度，而所有的硬件和设备生产厂活得都是非常辛苦的。
-
-### 0.2.2 持久化存储设备 
-
-内存中的信息在断电时会丢失。那我们可以考虑将程序和数据永久的保存在存储设备上。当计算机确实需要这些数据时，再移入内存时，因为从内存中读取比从存储设备读取要快得多。
-存储设备主要有以下三种：
-- **磁盘驱动器**
-每台计算机至少有一个硬盘驱动器。硬盘(hard disk)用于永久的保存数据和程序。
-
-![逻辑硬盘](https://img-blog.csdnimg.cn/7527a5076ed34269939b516b7bf090ae.png)
+<ul>
+<li><strong>摩尔定律(Moore’s Law)</strong></li>
+<li><strong>安迪-比尔定律(Andy and Bill’s Law)</strong></li>
+<li><strong>反摩尔定律(Reverse Moore’s Law)</strong></li>
+</ul>
+<ol>
+<li>摩尔定律(Moore’s Law)是由英特尔(Intel)创始人之一戈登·摩尔(Gordon Moore)提出来的。其内容为：当价格不变时，集成电路上可容纳的元器件的数目，约每隔18-24个月便会增加一倍，性能也将提升一倍。换言之，每一美元所能买到的电脑性能，将每隔18-24个月翻一倍以上。</li>
+<li>安迪-比尔定律(Andy and Bill’s Law)描述了硬件产商和软件产商之间的关系。即比尔要拿走安迪所给的(What Andy gives,Bill takes away)。个人电脑工业整个的生态链是这样，以微软为首的软件开发商吃掉硬件提升带来的全部好处，迫使用户更新让惠普和戴尔等公司受益，而这些整机生产厂商再向英特尔这样的半导体厂订货购买新的芯片，同时向Seagate等外设厂购买新的外设。在这中间，各家的利润先后得到相应的提升，股票也随着增长。各个硬件半导体和外设公司再将利润投入研发，按照摩尔定理制定的速度，提升硬件性能，为微软下一步更新软件、吃掉硬件性能做准备。当然，微软和其它软件开发商在吃掉大部分硬件提升好处的同时，或多或少地给用户带来一些新东西。</li>
+<li>反摩尔定律(Reverse Moore’s Law)是Google的前CEO埃里克·施密特提出的，如果你反过来看摩尔定律，一个IT公司如果今天和18个月前卖掉同样多的、同样的产品，它的营业额就要降一半。IT界把它称为反摩尔定律。反摩尔定律对于所有的IT公司来讲，都是非常可怕的，因为一个IT公司花了同样的劳动，却只得到以前一半的收入，反摩尔定律逼着所有的硬件设备公司必须赶上摩尔定律所规定的更新速度，而所有的硬件和设备生产厂活得都是非常辛苦的。</li>
+</ol>
+<h3 id="0-2-2-持久化存储设备"><a href="#0-2-2-持久化存储设备" class="headerlink" title="0.2.2 持久化存储设备"></a>0.2.2 持久化存储设备</h3><p>内存中的信息在断电时会丢失。那我们可以考虑将程序和数据永久的保存在存储设备上。当计算机确实需要这些数据时，再移入内存时，因为从内存中读取比从存储设备读取要快得多。<br>存储设备主要有以下三种：</p>
+<ul>
+<li><strong>磁盘驱动器</strong><br>每台计算机至少有一个硬盘驱动器。硬盘(hard disk)用于永久的保存数据和程序。</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/7527a5076ed34269939b516b7bf090ae.png" alt="逻辑硬盘"></p>
 <center><b>图0-4 逻辑硬盘</b></center>
 
 <p><br/><img src="https://img-blog.csdnimg.cn/de5afb8f8a454b65b80b499ee66d77eb.jpeg#pic_center" alt="硬盘"></p>
 <center><b>图0-5 物理硬盘</b></center>
-<br />
 
-- **光盘驱动器(CD和DVD)**
-CD的容量可达700MB
-DVD的容量可达4.7GB
-![光驱](https://img-blog.csdnimg.cn/9a1bcc678ce44c1aa2863e7fd1772449.jpeg#pic_center)
-<center><b>图0-6 光驱</b></center>
+<ul>
+<li><strong>光盘驱动器(CD和DVD)</strong><br>CD的容量可达700MB<br>DVD的容量可达4.7GB<br><img src="https://img-blog.csdnimg.cn/9a1bcc678ce44c1aa2863e7fd1772449.jpeg#pic_center" alt="光驱"><center><b>图0-6 光驱</b></center>
 
+</li>
+</ul>
 <p><br /></p>
 <ul>
 <li><strong>USB闪存驱动器</strong><br><strong>USB：Universal Serial Bus 通用串行总线</strong><br>可以使用USB将打印机、数码相机、鼠标、外部硬盘驱动器连接到计算机上。USB闪存驱动器很小，是可用于存储和传输数据的设备。<br><br/><br><img src="https://img-blog.csdnimg.cn/801ed39045c94d19b8b95ee56f5e28ec.jpeg#pic_center" alt="U盘"><br><center><b>图0-7 U盘</b></center><br><br /></li>
@@ -116,13 +133,13 @@ DVD的容量可达4.7GB
 </ul>
 <p><img src="https://img-blog.csdnimg.cn/5ec1f1af80dd473f8db9729fd052260b.jpeg#pic_center" alt="内存空间"></p>
 <center><b>图0-8 内存空间</b></center>
-<br />
 
-- 一个计算机具有的RAM越多，它的运行速度越快，但是此规律是有限制的。
-- 内存与CPU一样，也构建在表面嵌有数百万晶体管的硅半导体芯片上。但内存芯片更简单、更低速、更便宜。
-- 计算机CPU和内存的交互是最频繁的，内存是我们的告诉缓存区，用户磁盘和CPU的交互，而CPU运转速度越来越快，磁盘远远跟不上CPU的读写速度。
-
-![内存条](https://img-blog.csdnimg.cn/2f885a30322845af90f7555f1c2235ae.jpeg#pic_center)
+<ul>
+<li>一个计算机具有的RAM越多，它的运行速度越快，但是此规律是有限制的。</li>
+<li>内存与CPU一样，也构建在表面嵌有数百万晶体管的硅半导体芯片上。但内存芯片更简单、更低速、更便宜。</li>
+<li>计算机CPU和内存的交互是最频繁的，内存是我们的告诉缓存区，用户磁盘和CPU的交互，而CPU运转速度越来越快，磁盘远远跟不上CPU的读写速度。</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/2f885a30322845af90f7555f1c2235ae.jpeg#pic_center" alt="内存条"></p>
 <center><b>图0-9 内存条</b></center>
 
 <p><img src="https://img-blog.csdnimg.cn/adab61e6a4084a99b5b6b819865bd448.jpeg#pic_center" alt="在这里插入图片描述"></p>
@@ -208,7 +225,7 @@ DVD的容量可达4.7GB
 </tbody>
 </table>
 </div>
-<p>$像素密度=\dfrac{\sqrt{\left[\left(长度像素数\right)^2+\left(宽度像素数\right)^2\right]}}{屏幕尺寸}$<br><br/></p>
+<p><img src="../img/%E5%85%AC%E5%BC%8F.PNG" alt="公式"></p>
 <h3 id="0-2-5-通信设备"><a href="#0-2-5-通信设备" class="headerlink" title="0.2.5 通信设备"></a>0.2.5 通信设备</h3><ul>
 <li>计算机可以通过通信设备进行联网。</li>
 <li>常见的设备有：<ul>
@@ -234,48 +251,38 @@ DVD的容量可达4.7GB
 </ul>
 <p><img src="https://img-blog.csdnimg.cn/a48ecde4bd8a4dc0b98e9b7a95d37d59.jpeg#pic_center" alt="操作系统和其它概念的关系"></p>
 <center><b>图0-11 操作系统和其它概念的关系</b></center>
-<br/>
 
-- 操作系统的主要任务：
-   - 控制和监视系统的活动
-   - 分配和调配系统资源
-   - 调度操作
-
-## 0.5 万维网
-**万维网(World Wide Web,www,环球信息网)常简称为Web**，发明者蒂姆·博纳斯·李。分为**Web客户端**和**Web服务器程序**。WWW可以让Web客户端(常用浏览器)访问浏览Web服务器上的页面。是一个由许多互相链接的超文本组成的系统，通过互联网访问。在这个系统中，每个有用的事物，称为一样“资源”；并且由一个全局 **“统一资源定位符”(URL)** 标识；有些资源通过**超文本传输协议(Hypertext Transfer Protocol)** 传送给用户，而后者通过点击链接来获得资源。
-URL例如：www.sina.com
-<br/>
-
-![万维网、因特网、互联网之间的关系](https://img-blog.csdnimg.cn/c3c257c222d4450bb53e355aab6d0813.jpeg#pic_center)
+<ul>
+<li>操作系统的主要任务：<ul>
+<li>控制和监视系统的活动</li>
+<li>分配和调配系统资源</li>
+<li>调度操作</li>
+</ul>
+</li>
+</ul>
+<h2 id="0-5-万维网"><a href="#0-5-万维网" class="headerlink" title="0.5 万维网"></a>0.5 万维网</h2><p><strong>万维网(World Wide Web,www,环球信息网)常简称为Web</strong>，发明者蒂姆·博纳斯·李。分为<strong>Web客户端</strong>和<strong>Web服务器程序</strong>。WWW可以让Web客户端(常用浏览器)访问浏览Web服务器上的页面。是一个由许多互相链接的超文本组成的系统，通过互联网访问。在这个系统中，每个有用的事物，称为一样“资源”；并且由一个全局 <strong>“统一资源定位符”(URL)</strong> 标识；有些资源通过<strong>超文本传输协议(Hypertext Transfer Protocol)</strong> 传送给用户，而后者通过点击链接来获得资源。<br>URL例如：www.sina.com</p>
+<p><img src="https://img-blog.csdnimg.cn/c3c257c222d4450bb53e355aab6d0813.jpeg#pic_center" alt="万维网、因特网、互联网之间的关系"></p>
 <center><b>图0-12 万维网、因特网、互联网之间的关系(包含和被包含的关系)</b></center>
-<br/>
 
-**万维网是无数个网络站点和网页的集合，它们在一起构成了因特网最主要的部分**(因特网也包括电子邮件、Usenet以及新闻组)。它实际上是多媒体的集合，是由超级链接连接而成的。我们通常通过网络浏览器上网观看的，就是万维网的内容。
-<br/>
-
-![万维网](https://img-blog.csdnimg.cn/4ca06a9e99894daebb5eb2e9cd133d40.jpeg#pic_center)
+<p><strong>万维网是无数个网络站点和网页的集合，它们在一起构成了因特网最主要的部分</strong>(因特网也包括电子邮件、Usenet以及新闻组)。它实际上是多媒体的集合，是由超级链接连接而成的。我们通常通过网络浏览器上网观看的，就是万维网的内容。</p>
+<p><img src="https://img-blog.csdnimg.cn/4ca06a9e99894daebb5eb2e9cd133d40.jpeg#pic_center" alt="万维网"></p>
 <center><b>图0-13 万维网</b></center>
-<br/>
 
-软件架构：
-
-- B/S架构，浏览器/服务器架构，通过浏览器访问服务器。
-- C/S架构，客户端/服务器架构，通过客户端访问服务器。
-www或Web使用B/S架构。
-
-## 0.6 职业发展与提升
-![职业路线](https://img-blog.csdnimg.cn/7d522f1dc2904851ba5eede7b1109fa0.jpeg#pic_center)
+<p>软件架构：</p>
+<ul>
+<li>B/S架构，浏览器/服务器架构，通过浏览器访问服务器。</li>
+<li>C/S架构，客户端/服务器架构，通过客户端访问服务器。<br>www或Web使用B/S架构。</li>
+</ul>
+<h2 id="0-6-职业发展与提升"><a href="#0-6-职业发展与提升" class="headerlink" title="0.6 职业发展与提升"></a>0.6 职业发展与提升</h2><p><img src="https://img-blog.csdnimg.cn/7d522f1dc2904851ba5eede7b1109fa0.jpeg#pic_center" alt="职业路线"></p>
 <center><b>图0-14 IT行业职业路线</b></center>
-<br/>
 
-![亚信公司职业路径](https://img-blog.csdnimg.cn/94e5d7b332f240829fb28a3d24e355c1.png)
+<p><img src="https://img-blog.csdnimg.cn/94e5d7b332f240829fb28a3d24e355c1.png" alt="亚信公司职业路径"></p>
 <center><b>图0-15 亚信公司提出的职业路径</b></center>
 
 <p><img src="https://img-blog.csdnimg.cn/274cb8bbe8514d7eaf29343baeefcebb.jpeg#pic_center" alt="在这里插入图片描述"></p>
 <center><b>图0-16 专业职级(1/2)</b></center>
-<br/>
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/a85751262dcd4e95b37995b547e90543.jpeg#pic_center)
+<p><img src="https://img-blog.csdnimg.cn/a85751262dcd4e95b37995b547e90543.jpeg#pic_center" alt="在这里插入图片描述"></p>
 <center><b>图0-17 专业职级(2/2)</b></center>
 
 <p><br/></p>
@@ -320,32 +327,6 @@ www或Web使用B/S架构。
         <tag>计算机基础</tag>
         <tag>职业规划</tag>
         <tag>尚硅谷java核心基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/03/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>my first post</title>
-    <url>/2023/03/03/my-first-post/</url>
-    <content><![CDATA[<p>This is my first post.I write the post to remember this exciting moment….</p>
-]]></content>
-      <categories>
-        <category>杂项</category>
-      </categories>
-      <tags>
-        <tag>其它</tag>
       </tags>
   </entry>
   <entry>
