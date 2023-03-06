@@ -1,6 +1,354 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【尚硅谷】Java核心基础之day00_计算机基础知识--学习笔记</title>
+    <url>/2023/03/06/%E3%80%90%E5%B0%9A%E7%A1%85%E8%B0%B7%E3%80%91Java%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%A1%80%E4%B9%8Bday00-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="day00-编程入门（内容来源于尚硅谷）"><a href="#day00-编程入门（内容来源于尚硅谷）" class="headerlink" title="day00_编程入门（内容来源于尚硅谷）"></a>day00_编程入门（内容来源于尚硅谷）</h1><h2 id="0-1-概述"><a href="#0-1-概述" class="headerlink" title="0.1 概述"></a>0.1 概述</h2><p>计算机包括<strong>硬件(hardware)</strong> 和<strong>软件(software)</strong> 两部分。硬件包括计算机中看得见的物理部分，而软件提供看不见的指令。这些指令控制硬件并且使得硬件完成特定的任务。</p>
+<ul>
+<li><p><strong>程序设计</strong></p>
+<ul>
+<li><strong>定义</strong>：创建（或开发）软件。软件包含了指令，告诉计算机做什么。</li>
+<li><strong>应用场景</strong>：软件遍布我们周围。除了个人计算机，飞机、汽车、手机甚至烤面包机中，同样运行着软件。</li>
+</ul>
+</li>
+<li><p><strong>程序设计语言</strong><br>软件开发人员在称为程序设计语言的强大工具的帮助下创建软件。</p>
+</li>
+</ul>
+<ul>
+<li><h4>如何选择该学习哪种程序设计语言？</h4>
+
+<ul>
+<li>程序设计语言有很多种，每种语言都是为了实现某个特定的目的而发明的。</li>
+<li>你会困惑哪种语言是最好的。事实上，<strong>没有“最好”的语言</strong>。每种语言都有它的长处和短处。</li>
+<li>经验丰富的程序员知道各种语言擅长的应用场景。因此，会尽可能的掌握各种不同的程序设计语言。</li>
+<li>如果你掌握了一种编程语言，应该会更容易上手其它的编程语言。关键是学习<strong>如何使用程序设计方法来解决问题。这也是本套课程的主旨。</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="0-2-计算机硬件介绍"><a href="#0-2-计算机硬件介绍" class="headerlink" title="0.2 计算机硬件介绍"></a>0.2 计算机硬件介绍</h2><p><img src="https://img-blog.csdnimg.cn/11fd8f14066c40d59a30f4c22387a53f.jpeg#pic_center" alt="计算机硬件组成"></p>
+<center><b>图0-1 计算机硬件组成</b></center>
+<br/>
+在个人计算机上，总线搭建在主板上，主板是一个连接计算机各个部分的电路板。
+<br/>
+<br/>
+
+![冯诺依曼体系结构](https://img-blog.csdnimg.cn/7f650258a2994ca5bce5ae9788dce4ae.png#pic_center)
+<center><b>图0-2 冯 • 诺依曼体系结构(源于尚硅谷)</b></center>
+<br/>
+
+**冯 • 诺依曼体系结构**是现代计算机的基础,现在大多数计算机仍是冯诺伊曼计算机的组织结构，只是作了一点改进而已，并没有从根本上突破冯体系结构的束缚。冯 • 诺依曼也因此被人们称为“计算机之父”。
+
+### 0.2.1 中央处理器 
+
+- **中央处理器(Central Processing Unit,CPU)** 是计算机的大脑。它从内存中获取指令，然后执行这些指令。
+包括：**控制单元(control unit)** 和**算术/逻辑单元(arithmetic/logic unit)**。
+   - 控制单元：用于控制和协调其他组件的动作。
+   - 算数/逻辑单元：用于完成数值运算(+、-、*、/)和逻辑运算(比较)。
+
+![CPU](https://img-blog.csdnimg.cn/c990d7551429446e9c14aaffd5a498a6.jpeg#pic_center)
+<center><b>图0-3 CPU</b></center>
+<br/>
+
+ - 每台计算机都有一个内部时钟，该时钟以固定速度发射电子脉冲。时钟速度越快，在给定的时间段内执行的指令就越多。速度的计量单位是**赫兹(Hz)**。1Hz相当于每秒1个脉冲。随着CPU速度不断提高，目前以吉兆赫(GHz)来表述。
+
+- 最初一个CPU只有一个**核(core)**，核是处理中实现指令读取和执行的部分。一个多核CPU是一个具有两个或者更多独立核的组件，可提高CPU的处理能力。
+
+- 现在的CPU都是构建在一块小小的硅半导体芯片上，这块芯片上包含数百万称为晶体管的小电路开关上，用于处理信息。
+
+- 1KHz = 1024Hz
+1MHz = 1024KHz
+1GHz = 1024MHz
+
+<h4> IT定律之计算机行业发展规律</h4>
+
+- **摩尔定律(Moore's Law)**
+- **安迪-比尔定律(Andy and Bill's Law)**
+- **反摩尔定律(Reverse Moore's Law)**
+
+1. 摩尔定律(Moore's Law)是由英特尔(Intel)创始人之一戈登·摩尔(Gordon Moore)提出来的。其内容为：当价格不变时，集成电路上可容纳的元器件的数目，约每隔18-24个月便会增加一倍，性能也将提升一倍。换言之，每一美元所能买到的电脑性能，将每隔18-24个月翻一倍以上。
+2. 安迪-比尔定律(Andy and Bill's Law)描述了硬件产商和软件产商之间的关系。即比尔要拿走安迪所给的(What Andy gives,Bill takes away)。个人电脑工业整个的生态链是这样，以微软为首的软件开发商吃掉硬件提升带来的全部好处，迫使用户更新让惠普和戴尔等公司受益，而这些整机生产厂商再向英特尔这样的半导体厂订货购买新的芯片，同时向Seagate等外设厂购买新的外设。在这中间，各家的利润先后得到相应的提升，股票也随着增长。各个硬件半导体和外设公司再将利润投入研发，按照摩尔定理制定的速度，提升硬件性能，为微软下一步更新软件、吃掉硬件性能做准备。当然，微软和其它软件开发商在吃掉大部分硬件提升好处的同时，或多或少地给用户带来一些新东西。
+3. 反摩尔定律(Reverse Moore's Law)是Google的前CEO埃里克·施密特提出的，如果你反过来看摩尔定律，一个IT公司如果今天和18个月前卖掉同样多的、同样的产品，它的营业额就要降一半。IT界把它称为反摩尔定律。反摩尔定律对于所有的IT公司来讲，都是非常可怕的，因为一个IT公司花了同样的劳动，却只得到以前一半的收入，反摩尔定律逼着所有的硬件设备公司必须赶上摩尔定律所规定的更新速度，而所有的硬件和设备生产厂活得都是非常辛苦的。
+
+### 0.2.2 持久化存储设备 
+
+内存中的信息在断电时会丢失。那我们可以考虑将程序和数据永久的保存在存储设备上。当计算机确实需要这些数据时，再移入内存时，因为从内存中读取比从存储设备读取要快得多。
+存储设备主要有以下三种：
+- **磁盘驱动器**
+每台计算机至少有一个硬盘驱动器。硬盘(hard disk)用于永久的保存数据和程序。
+
+![逻辑硬盘](https://img-blog.csdnimg.cn/7527a5076ed34269939b516b7bf090ae.png)
+<center><b>图0-4 逻辑硬盘</b></center>
+
+<p><br/><img src="https://img-blog.csdnimg.cn/de5afb8f8a454b65b80b499ee66d77eb.jpeg#pic_center" alt="硬盘"></p>
+<center><b>图0-5 物理硬盘</b></center>
+<br />
+
+- **光盘驱动器(CD和DVD)**
+CD的容量可达700MB
+DVD的容量可达4.7GB
+![光驱](https://img-blog.csdnimg.cn/9a1bcc678ce44c1aa2863e7fd1772449.jpeg#pic_center)
+<center><b>图0-6 光驱</b></center>
+
+<p><br /></p>
+<ul>
+<li><strong>USB闪存驱动器</strong><br><strong>USB：Universal Serial Bus 通用串行总线</strong><br>可以使用USB将打印机、数码相机、鼠标、外部硬盘驱动器连接到计算机上。USB闪存驱动器很小，是可用于存储和传输数据的设备。<br><br/><br><img src="https://img-blog.csdnimg.cn/801ed39045c94d19b8b95ee56f5e28ec.jpeg#pic_center" alt="U盘"><br><center><b>图0-7 U盘</b></center><br><br /></li>
+</ul>
+<h3 id="0-2-3-内存"><a href="#0-2-3-内存" class="headerlink" title="0.2.3 内存"></a>0.2.3 内存</h3><h4>比特(bit)和字节(byte)</h4>
+
+<ul>
+<li><p>在讨论内存前，先清楚数据是如何存储在计算机中的。</p>
+</li>
+<li><p>计算机就是一系列的电路开关。每个开关存在两种状态：关(off)和开(on)。如果电路是开的，它的值是1。如果电路是关的，它的值是0。</p>
+</li>
+<li><p><strong>一个0或者1存储为一个比特(bit)，是计算机中最小的存储单位</strong>。</p>
+</li>
+<li><p><strong>计算机中最基本的存储单元是字节(byte)</strong>。<strong>每个字节由8个比特构成</strong>。</p>
+</li>
+<li><p>计算机的存储能力是以字节和多字节来衡量的。如下：<br><strong>千字节(kilobyte,KB) = 1024B<br>兆字节(megabyte,MB) = 1024KB<br>千兆字节(gigabyte,GB) = 1024MB<br>万亿字节(terabyte,TB) = 1024GB</strong></p>
+</li>
+<li><p>PB指petabyte，它是较高级的存储单位，其上还有EB、ZB、YB等单位。</p>
+<h4> 什么是内存？</h4>
+</li>
+<li><p>内存(也叫Random-Access Memory,RAM)：由一个有序的字节序列组成，用于存储程序及程序需要的数据。</p>
+</li>
+<li><strong>一个程序和它的数据在被CPU执行前必须移到计算机的内存中。</strong></li>
+<li><strong>每个字节都有一个唯一的地址。</strong> 见下图。使用这个地址确定字节的位置，以便于存储和获取数据。<br><br/></li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/5ec1f1af80dd473f8db9729fd052260b.jpeg#pic_center" alt="内存空间"></p>
+<center><b>图0-8 内存空间</b></center>
+<br />
+
+- 一个计算机具有的RAM越多，它的运行速度越快，但是此规律是有限制的。
+- 内存与CPU一样，也构建在表面嵌有数百万晶体管的硅半导体芯片上。但内存芯片更简单、更低速、更便宜。
+- 计算机CPU和内存的交互是最频繁的，内存是我们的告诉缓存区，用户磁盘和CPU的交互，而CPU运转速度越来越快，磁盘远远跟不上CPU的读写速度。
+
+![内存条](https://img-blog.csdnimg.cn/2f885a30322845af90f7555f1c2235ae.jpeg#pic_center)
+<center><b>图0-9 内存条</b></center>
+
+<p><img src="https://img-blog.csdnimg.cn/adab61e6a4084a99b5b6b819865bd448.jpeg#pic_center" alt="在这里插入图片描述"></p>
+<center><b>图0-10 CPU、内存和硬盘之间的交互关系</b></center>
+
+<ul>
+<li>实测发现：<strong>内存存取数据的速度比硬盘的存取速度快10倍</strong>，在某些环境里，硬盘和内存之间的速度差距可能会更大。而<strong>CPU的速度比内存不知还要快多少倍</strong>。当我们把程序从硬盘放到内存以后，CPU就直接在内存运行程序，这样比CPU直接在硬盘运行程序就要快很多。</li>
+<li>内存解决了一部分CPU运行过快，而硬盘数据存取太慢的问题，提高了我们的电脑的运行速度。内存就如同一条“高速车道”一般，数据由传输速度较慢的硬盘通过这条高速车道传送至CPU进行处理！</li>
+<li><strong>但内存是带电存储的(一旦断电数据就会消失)，而且容量有限，所以要长时间储存程序或数据就需要使用硬盘</strong>。</li>
+<li>内存在这里起了两个作用：</li>
+</ul>
+<ol>
+<li>保存从硬盘读取的数据，提供给CPU使用</li>
+<li>保存CPU的一些临时执行结果，以使CPU下次使用或保存到硬盘</li>
+</ol>
+<ul>
+<li>大家都知道有内存和硬盘之说，其实内存就是一种RAM(Random Access Memory)技术，而ROM(Read Only Memory)则类似于硬盘技术，两者都是存储器，只是RAM的速度要远远高于ROM的速度。</li>
+</ul>
+<h3 id="0-2-4-输入和输出设备"><a href="#0-2-4-输入和输出设备" class="headerlink" title="0.2.4 输入和输出设备"></a>0.2.4 输入和输出设备</h3><ul>
+<li>常见的输入设备：键盘(Keyboard)和鼠标(mouse)</li>
+<li>常见的输出设备：显示器(monitor)和打印机(printer)</li>
+<li>显示器屏幕分辨率：是指显示设备水平和垂直方向上显示的像素(px)数<ul>
+<li>分辨率可以手工设置。</li>
+<li><strong>分辨率越高，图像越锐化、越清晰</strong>。<center><b>表0-1 知名手机品牌屏幕参数表</b></center>
+
+</li>
+</ul>
+</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>品牌</th>
+<th>尺寸</th>
+<th>像素</th>
+<th>像素密度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>华为mate 20 x</td>
+<td>7.2</td>
+<td>2244x1080像素</td>
+<td>345ppi</td>
+</tr>
+<tr>
+<td>华为mate 20</td>
+<td>6.53</td>
+<td>2244x1080像素</td>
+<td>381ppi</td>
+</tr>
+<tr>
+<td>华为mate 20 pro</td>
+<td>6.39</td>
+<td>3120x1440像素</td>
+<td>538ppi</td>
+</tr>
+<tr>
+<td>小米8 SE</td>
+<td>5.88</td>
+<td>2244x1080像素</td>
+<td>423ppi</td>
+</tr>
+<tr>
+<td>小米8</td>
+<td>6.21</td>
+<td>2244x1080像素</td>
+<td>401ppi</td>
+</tr>
+<tr>
+<td>苹果 iphone8</td>
+<td>4.7</td>
+<td>1334x750像素</td>
+<td>326ppi</td>
+</tr>
+<tr>
+<td>苹果 iphone8 plus</td>
+<td>5.5</td>
+<td>1920x1080像素</td>
+<td>401ppi</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>$像素密度=\dfrac{\sqrt{\left[\left(长度像素数\right)^2+\left(宽度像素数\right)^2\right]}}{屏幕尺寸}$<br><br/></p>
+<h3 id="0-2-5-通信设备"><a href="#0-2-5-通信设备" class="headerlink" title="0.2.5 通信设备"></a>0.2.5 通信设备</h3><ul>
+<li>计算机可以通过通信设备进行联网。</li>
+<li>常见的设备有：<ul>
+<li>拨号调制解调器：使用的是电话线，传输速度可达56000bps(bps:每秒比特)</li>
+<li>DSL(数字用户线)：使用的也是电话线，但传输速度较上面的快20倍</li>
+<li>电缆调制解调器：利用有线电视电缆进行数据传输，通常速度比DSL快</li>
+<li>网络接口卡(NIC)：将计算机接入局域网(LAN)的设备。局域网通常用于大学、商业组织和政府组织，速度甚至可达1000Mbps</li>
+<li>无线网络：在家庭、商业和学校中极其常见，计算机可通过无线适配器连接到局域网或Internet上</li>
+</ul>
+</li>
+</ul>
+<h2 id="0-3-计算机发展史上的鼻祖"><a href="#0-3-计算机发展史上的鼻祖" class="headerlink" title="0.3  计算机发展史上的鼻祖"></a>0.3  计算机发展史上的鼻祖</h2><h4>图灵</h4>
+最近半个世纪以来，世界计算机科学界的重大进步，离不开图灵等人的理论奠基作用和多方面的的开创性研究成果。图灵是当之无愧的计算机科学和人工智能之父。甚至认为，他在技术上的贡献及对未来世界的影响几乎可与牛顿、爱因斯坦等巨人比肩。
+图灵论文中的“用有限的指令和有限的存储空间可算尽一切可算之物”理论让当时所有的科学家震惊。
+美国计算机学会(ACM)的年度“图灵奖”，自从1966年设立以来，一直是世界计算机科学领域的最高荣誉，相当于计算机科学界的诺贝尔奖。至今，中国人只有姚期智院士获该奖项。
+
+<h4>冯·诺伊曼</h4>
+
+<p>20世纪最重要的数学家之一，在现代计算机、博弈论、核武器和生化武器等诸多领域内有杰出建树的最伟大的科学金才之一，被后人称为“<strong>计算机之父</strong>”和“ <strong>博弈论之父</strong> ”。<br>计算机的基本工作原理是存储程序和程序控制，它是由世界著名的数学家冯·诺依曼提出的。<strong>最简单的来说，冯诺依曼理论的要点是：数学计算机的数制采用二进制；计算机应该按照程序顺序执行。</strong><br>同样有着“计算机之父”称号的冯·诺依曼的助手弗兰克尔在一封信中写到：“……计算机的基本概念属于图灵。按照我的看法，冯·诺依曼的基本作用是使世界认识了由图灵引入的计算机基本概念……”</p>
+<h2 id="0-4-操作系统"><a href="#0-4-操作系统" class="headerlink" title="0.4 操作系统"></a>0.4 操作系统</h2><ul>
+<li>操作系统(Operating System)是运行在计算机上的最重要的程序，它可以管理和控制计算机的活动。</li>
+<li>硬件、操作系统、应用程序和用户之间的关系如下图。</li>
+</ul>
+<p><img src="https://img-blog.csdnimg.cn/a48ecde4bd8a4dc0b98e9b7a95d37d59.jpeg#pic_center" alt="操作系统和其它概念的关系"></p>
+<center><b>图0-11 操作系统和其它概念的关系</b></center>
+<br/>
+
+- 操作系统的主要任务：
+   - 控制和监视系统的活动
+   - 分配和调配系统资源
+   - 调度操作
+
+## 0.5 万维网
+**万维网(World Wide Web,www,环球信息网)常简称为Web**，发明者蒂姆·博纳斯·李。分为**Web客户端**和**Web服务器程序**。WWW可以让Web客户端(常用浏览器)访问浏览Web服务器上的页面。是一个由许多互相链接的超文本组成的系统，通过互联网访问。在这个系统中，每个有用的事物，称为一样“资源”；并且由一个全局 **“统一资源定位符”(URL)** 标识；有些资源通过**超文本传输协议(Hypertext Transfer Protocol)** 传送给用户，而后者通过点击链接来获得资源。
+URL例如：www.sina.com
+<br/>
+
+![万维网、因特网、互联网之间的关系](https://img-blog.csdnimg.cn/c3c257c222d4450bb53e355aab6d0813.jpeg#pic_center)
+<center><b>图0-12 万维网、因特网、互联网之间的关系(包含和被包含的关系)</b></center>
+<br/>
+
+**万维网是无数个网络站点和网页的集合，它们在一起构成了因特网最主要的部分**(因特网也包括电子邮件、Usenet以及新闻组)。它实际上是多媒体的集合，是由超级链接连接而成的。我们通常通过网络浏览器上网观看的，就是万维网的内容。
+<br/>
+
+![万维网](https://img-blog.csdnimg.cn/4ca06a9e99894daebb5eb2e9cd133d40.jpeg#pic_center)
+<center><b>图0-13 万维网</b></center>
+<br/>
+
+软件架构：
+
+- B/S架构，浏览器/服务器架构，通过浏览器访问服务器。
+- C/S架构，客户端/服务器架构，通过客户端访问服务器。
+www或Web使用B/S架构。
+
+## 0.6 职业发展与提升
+![职业路线](https://img-blog.csdnimg.cn/7d522f1dc2904851ba5eede7b1109fa0.jpeg#pic_center)
+<center><b>图0-14 IT行业职业路线</b></center>
+<br/>
+
+![亚信公司职业路径](https://img-blog.csdnimg.cn/94e5d7b332f240829fb28a3d24e355c1.png)
+<center><b>图0-15 亚信公司提出的职业路径</b></center>
+
+<p><img src="https://img-blog.csdnimg.cn/274cb8bbe8514d7eaf29343baeefcebb.jpeg#pic_center" alt="在这里插入图片描述"></p>
+<center><b>图0-16 专业职级(1/2)</b></center>
+<br/>
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/a85751262dcd4e95b37995b547e90543.jpeg#pic_center)
+<center><b>图0-17 专业职级(2/2)</b></center>
+
+<p><br/></p>
+<p><img src="https://img-blog.csdnimg.cn/dc30b27422d7466c80496df747c48df0.png" alt="在这里插入图片描述"></p>
+<p><center><b>图0-18 管理职级</b></center><br><br/></p>
+<p><img src="https://img-blog.csdnimg.cn/e681a189b0b146009fb91e874c9022f6.png" alt="学习规律"></p>
+<p><center><b>图0-19 学习规律</b></center><br><br/></p>
+<h2 id="0-7-学习经验探讨"><a href="#0-7-学习经验探讨" class="headerlink" title="0.7 学习经验探讨"></a>0.7 学习经验探讨</h2><ul>
+<li>锻炼“双核”处理，边听边思考，边做“笔记”</li>
+<li><p>纸上得来终觉浅，绝知此事要躬行！</p>
+<ul>
+<li>第一层次：看得懂(依赖于视频、书、帖子)</li>
+<li><p>第二层次：练的熟(每天代码必须实现<strong>2-3遍</strong>)</p>
+<ul>
+<li>总结：<strong>三分看，七分练</strong></li>
+<li>建立行之有效的学习方法</li>
+<li>学习编程的捷径：<strong>敲，狂敲</strong></li>
+<li><strong>“模仿”</strong> 好的编码习惯</li>
+<li>整理、回顾：<strong>每天花30min整理</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>一开始需要模仿</li>
+<li>知识变为技能，需要长时间的积累</li>
+<li>四种心态<ul>
+<li>不是“没听懂”，而是“记不住”<ul>
+<li>要为成功找理由，不为失败找借口</li>
+<li>战略上藐视“对手”，战术上重视“对手”</li>
+<li>“代码虐我千百遍，我视代码如初恋”</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>注：绝大多数文字来源于尚硅谷；图0-1、0-4、0-5、0-8、0-10、0-11、0-12、0-13自绘，其余图片来源于尚硅谷和网络，仅用于学习。</strong></p>
+]]></content>
+      <categories>
+        <category>计算机基础知识</category>
+      </categories>
+      <tags>
+        <tag>计算机基础</tag>
+        <tag>职业规划</tag>
+        <tag>尚硅谷java核心基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/03/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>my first post</title>
+    <url>/2023/03/03/my-first-post/</url>
+    <content><![CDATA[<p>This is my first post.I write the post to remember this exciting moment….</p>
+]]></content>
+      <categories>
+        <category>杂项</category>
+      </categories>
+      <tags>
+        <tag>其它</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【晴问算法】入门篇—贪心算法—经典例题和个人题解</title>
     <url>/2023/03/04/%E3%80%90%E6%99%B4%E9%97%AE%E7%AE%97%E6%B3%95%E3%80%91%E5%85%A5%E9%97%A8%E7%AF%87%E2%80%94%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E2%80%94%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98%E5%92%8C%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/</url>
     <content><![CDATA[<p><strong>OJ平台链接</strong>：<a href="https://sunnywhy.com/sfbj/4/4/149">https://sunnywhy.com/sfbj/4/4/149</a></p>
@@ -71,32 +419,6 @@
         <tag>算法</tag>
         <tag>贪心算法</tag>
         <tag>C/C++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/03/03/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>my first post</title>
-    <url>/2023/03/03/my-first-post/</url>
-    <content><![CDATA[<p>This is my first post.I write the post to remember this exciting moment….</p>
-]]></content>
-      <categories>
-        <category>杂项</category>
-      </categories>
-      <tags>
-        <tag>其它</tag>
       </tags>
   </entry>
 </search>
