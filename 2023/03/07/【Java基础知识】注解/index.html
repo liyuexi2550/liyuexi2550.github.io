@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="java,java基础," />
+  <meta name="keywords" content="java,java高级特性," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="java在JDK1.5以后引入了注解(Annotation)的功能。 注解主要用于说明代码的，是代码的特殊标记，因此是编译器和JVM可见的，而通常的注释是被编译器和JVM完全忽略的，这就是注解和注释的最主要区别。 注解主要有三个方面的作用：分别是编写文档、编译检查、代码分析 JavaSE中，注解作用有限，但在JavaEE中，作用很大，可以代替XML配置  用于文档生成的注解    注解 作用 格">
+<meta name="description" content="java在JDK1.5以后引入了注解(Annotation)的功能。 注解主要用于说明代码的，是代码的特殊标记，因此是编译器和JVM可见的，而通常的注释是被编译器和JVM完全忽略的，这就是注解和注释的最主要区别。 注解主要有三个方面的作用：分别是编写文档、编译检查、代码分析 JavaSE中，注解作用有限，但在JavaEE中，作用很大，可以代替XML配置  一、常用注解1. 用于文档生成的注解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Java基础知识】注解">
+<meta property="og:title" content="【Java高级特性】注解">
 <meta property="og:url" content="http://example.com/2023/03/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91%E6%B3%A8%E8%A7%A3/index.html">
 <meta property="og:site_name" content="Li Yuexi的博客">
-<meta property="og:description" content="java在JDK1.5以后引入了注解(Annotation)的功能。 注解主要用于说明代码的，是代码的特殊标记，因此是编译器和JVM可见的，而通常的注释是被编译器和JVM完全忽略的，这就是注解和注释的最主要区别。 注解主要有三个方面的作用：分别是编写文档、编译检查、代码分析 JavaSE中，注解作用有限，但在JavaEE中，作用很大，可以代替XML配置  用于文档生成的注解    注解 作用 格">
+<meta property="og:description" content="java在JDK1.5以后引入了注解(Annotation)的功能。 注解主要用于说明代码的，是代码的特殊标记，因此是编译器和JVM可见的，而通常的注释是被编译器和JVM完全忽略的，这就是注解和注释的最主要区别。 注解主要有三个方面的作用：分别是编写文档、编译检查、代码分析 JavaSE中，注解作用有限，但在JavaEE中，作用很大，可以代替XML配置  一、常用注解1. 用于文档生成的注解">
 <meta property="og:locale">
 <meta property="article:published_time" content="2023-03-07T11:22:46.000Z">
-<meta property="article:modified_time" content="2023-03-07T13:56:43.279Z">
+<meta property="article:modified_time" content="2023-03-07T16:09:43.636Z">
 <meta property="article:author" content="Li Yuexi">
 <meta property="article:tag" content="java">
-<meta property="article:tag" content="java基础">
+<meta property="article:tag" content="java高级特性">
 <meta name="twitter:card" content="summary">
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title>【Java基础知识】注解 | Li Yuexi的博客</title>
+  <title>【Java高级特性】注解 | Li Yuexi的博客</title>
   
 
 
@@ -315,7 +315,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Java基础知识】注解</h1>
+          <h1 class="post-title" itemprop="name headline">【Java高级特性】注解</h1>
         
 
         <div class="post-meta">
@@ -386,7 +386,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  794
+                  1.8k
                 </span>
               
 
@@ -402,7 +402,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  8
                 </span>
               
             </div>
@@ -429,7 +429,7 @@
 <li>注解主要有三个方面的作用：分别是编写文档、编译检查、代码分析</li>
 <li>JavaSE中，注解作用有限，但在JavaEE中，作用很大，可以代替XML配置</li>
 </ul>
-<h3 id="用于文档生成的注解"><a href="#用于文档生成的注解" class="headerlink" title="用于文档生成的注解"></a>用于文档生成的注解</h3><div class="table-container">
+<h2 id="一、常用注解"><a href="#一、常用注解" class="headerlink" title="一、常用注解"></a>一、常用注解</h2><h3 id="1-用于文档生成的注解"><a href="#1-用于文档生成的注解" class="headerlink" title="1. 用于文档生成的注解"></a>1. 用于文档生成的注解</h3><div class="table-container">
 <table>
 <thead>
 <tr>
@@ -485,7 +485,7 @@
 </tbody>
 </table>
 </div>
-<h3 id="用于编译时格式检查的注解"><a href="#用于编译时格式检查的注解" class="headerlink" title="用于编译时格式检查的注解"></a>用于编译时格式检查的注解</h3><div class="table-container">
+<h3 id="2-用于编译时格式检查的注解"><a href="#2-用于编译时格式检查的注解" class="headerlink" title="2. 用于编译时格式检查的注解"></a>2. 用于编译时格式检查的注解</h3><div class="table-container">
 <table>
 <thead>
 <tr>
@@ -518,7 +518,90 @@
 </table>
 </div>
 <h3 id="下面这段代码展示了以上注解的用法"><a href="#下面这段代码展示了以上注解的用法" class="headerlink" title="下面这段代码展示了以上注解的用法"></a>下面这段代码展示了以上注解的用法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> LiYuexi</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> v0.1</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@see</span> Dog</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 7 March 2023</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Animal</span>&#123;</span><br><span class="line">    <span class="comment">//名字</span></span><br><span class="line">    <span class="meta">@SuppressWarnings(&quot;unused&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> name;</span><br><span class="line">    <span class="comment">//种类</span></span><br><span class="line">    <span class="meta">@SuppressWarnings(&quot;unused&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> species;</span><br><span class="line">    <span class="comment">//健康值</span></span><br><span class="line">    <span class="meta">@SuppressWarnings(&quot;unused&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> health;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> food</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">(String food)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal eats &quot;</span> + food);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">walk</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal walks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getHealth</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> health;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Deprecated</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">suicide</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal suicides&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">(String food)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog eats &quot;</span> + food);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">walk</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog walks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">play</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog plays something&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">attack</span><span class="params">()</span> <span class="keyword">throws</span> Exception&#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">health</span> <span class="operator">=</span> getHealth();</span><br><span class="line">        <span class="keyword">if</span>(health &lt; <span class="number">0</span>||health &gt; <span class="number">100</span>) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Exception</span>();</span><br><span class="line">        <span class="keyword">if</span>(getHealth() &gt;= <span class="number">60</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="用于替代配置文件的注解"><a href="#用于替代配置文件的注解" class="headerlink" title="用于替代配置文件的注解"></a>用于替代配置文件的注解</h3><p>Servlet3.0提供了注解，使得不需要在web.xml文件中进行Servlet的配置<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>LoginServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>com.servlet.LoginServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>LoginServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/login<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure><br>使用@WebServlet注解替代上述冗长的XML配置信息，如下所示。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@WebServlet(name = &quot;LoginServlet&quot;, value = &quot;/login&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">LoginServlet</span> <span class="keyword">extends</span> <span class="title class_">HttpServlet</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-用于替代配置文件的注解"><a href="#3-用于替代配置文件的注解" class="headerlink" title="3. 用于替代配置文件的注解"></a>3. 用于替代配置文件的注解</h3><p>Servlet3.0提供了注解，使得不需要在web.xml文件中进行Servlet的配置<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>LoginServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>com.servlet.LoginServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>LoginServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/login<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure><br>使用@WebServlet注解替代上述冗长的XML配置信息，如下所示。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@WebServlet(name = &quot;LoginServlet&quot;, value = &quot;/login&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">LoginServlet</span> <span class="keyword">extends</span> <span class="title class_">HttpServlet</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="二、自定义注解"><a href="#二、自定义注解" class="headerlink" title="二、自定义注解"></a>二、自定义注解</h2><ul>
+<li>使用@interface声明自定义Annotation，本质上就是一个类</li>
+<li>自定义注解自动继承java.lang.annotation.Annotation接口</li>
+<li>自定义Annotation可以有成员变量，其类型可为八种基本数据类型、String类型、Class类型、enum类型、Annotation类型以及上述类型的数组形式</li>
+<li>成员变量声明为无参数方法的形式，如String value();</li>
+<li>没有成员变量的Annotation称为标记，包含成员变量的Annotation称为元数据Annotation</li>
+<li>成员变量如果只有一个，一般命名为value，也可以用别的名字</li>
+<li>成员变量如果有多个，可以用以value命名的数组，如String[] value();，也可用别的名字</li>
+<li>使用 default 默认值 来为成员变量指定默认值，如String value() default “hello”;</li>
+<li>如果没有给成员变量指定默认值，当在使用Annotation时，必须指定参数值，如@MyAnnotation(value = “hello”)</li>
+<li>可以没有成员变量</li>
+</ul>
+<p>下面是一个例子<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@MyAnnotation(value = &quot;hello&quot;)</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="三、元注解-meta-annotation"><a href="#三、元注解-meta-annotation" class="headerlink" title="三、元注解(meta-annotation)"></a>三、元注解(meta-annotation)</h2><ul>
+<li>元Annotation用于修饰其他Annotation</li>
+<li>JDK5.0提供了4个标准元注解，分别是@Retention、@Target、@Documented、@Inherited</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>作用</th>
+<th>格式要求</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@Retention</td>
+<td>指定被修饰Annotation的生命周期</td>
+<td>@Retention(状态值)</td>
+<td>状态值有三种，见后文</td>
+</tr>
+<tr>
+<td>@Target</td>
+<td>指定被修饰的Annotation能用于修饰哪些程序元素</td>
+<td>@Target({若干程序元素})</td>
+<td>可指定元素见后文</td>
+</tr>
+<tr>
+<td>@Documented</td>
+<td>指定被修饰的Annotation将被javadoc工具提取成文档</td>
+<td>@Documented</td>
+<td>定义为@Documented的注解必须设置Retention的值为RUNTIME</td>
+</tr>
+<tr>
+<td>@Inherited</td>
+<td>指定被修饰的Annotation具有继承性</td>
+<td>@Inherited</td>
+<td>所修饰的Annotation修饰的类的子类自动具有该注解</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>@Retention的成员变量可被指定为三种值:</p>
+<ol>
+<li>RetentionPolicy.SOURCE 意味所修饰的注解只在编译阶段起作用，不会保留在class文件中</li>
+<li>RetentionPolicy.CLASS 默认行为，所修饰注解会被保留在class文件中，但不会保留在运行阶段</li>
+<li>RetentionPolicy.RUNTIME 保留在class文件中，同时还保留在运行阶段，加载在内存当中，能通过反射获取</li>
+</ol>
+<p>@Target的成员变量是一个数组，可被指定为一个或多个以下值：</p>
+<ol>
+<li>ElementType.TYPE </li>
+<li>ElementType.FIELD</li>
+<li>ElementType.METHOD</li>
+<li>ElementType.PARAMETER</li>
+<li>ElementType.CONSTRUCTOR</li>
+<li>ElementType.LOCAL_VARIABLE</li>
+</ol>
+<p>关于@Documented，下面是一个例子<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.*;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Inherited</span></span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE,ElementType.FIELD,ElementType.METHOD&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.CLASS)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@MyAnnotation(value = &quot;hello&quot;)</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//由于@Inherited的存在，kid类自动继承其父类Test的注解</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">kid</span> <span class="keyword">extends</span> <span class="title class_">Test</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="以下是JDK-8的新特性"><a href="#以下是JDK-8的新特性" class="headerlink" title="以下是JDK 8的新特性"></a>以下是JDK 8的新特性</h3><h2 id="四、可重复注解"><a href="#四、可重复注解" class="headerlink" title="四、可重复注解"></a>四、可重复注解</h2><p>在JDK 8以前，只能如此实现重复注解：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotations &#123;</span><br><span class="line">    MyAnnotation[] value();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@MyAnnotations(&#123;@MyAnnotation(&quot;hello&quot;),@MyAnnotation(&quot;world&quot;)&#125;)</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<p>jdk 8以来，可以这么实现<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="keyword">static</span> java.lang.annotation.ElementType.*;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(&#123;TYPE,FIELD,METHOD,PARAMETER,CONSTRUCTOR,LOCAL_VARIABLE&#125;)</span></span><br><span class="line"><span class="meta">@interface</span> MyAnnotations&#123;</span><br><span class="line">    MyAnnotation[] value();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Repeatable(MyAnnotations.class)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Target(&#123;TYPE,FIELD,METHOD,PARAMETER,CONSTRUCTOR,LOCAL_VARIABLE&#125;)</span></span><br><span class="line"><span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@MyAnnotation(&quot;hello&quot;)</span></span><br><span class="line"><span class="meta">@MyAnnotation(&quot;world&quot;)</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Test</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>注：<br>1.在MyAnnotation上声明Repeatable，成员变量值为MyAnnotations.class<br>2.保证MyAnnotation的元注解@Retention和@Target和MyAnnotations的@Retention和@Target一模一样</p>
+<h2 id="五、类型注解"><a href="#五、类型注解" class="headerlink" title="五、类型注解"></a>五、类型注解</h2><ul>
+<li>JDK 8之后，@Target的参数类型ElementType枚举值多了两个：TYPE_PARAMETER和TYPE_USE</li>
+<li>JDK 8以前，注解只能写在声明的地方；JDK 8以后，注解可以写在任何地方，只要@Target值中包含TYPE_PARAMETER或TYPE_USE。</li>
+</ul>
+<ol>
+<li>ElementType.TYPE_PARAMETER 表示该注解能写在类型变量的声明语句中</li>
+<li>ElementType.TYPE_USE 表示该注解能写在使用类型的任何语句中</li>
+</ol>
+<p>下面是ElementType.TYPE_PARAMETER的用法<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.ElementType;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.Target;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Generic</span>&lt;<span class="meta">@MyAnnotation()</span> T&gt; &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE_PARAMETER&#125;)</span></span><br><span class="line"><span class="meta">@interface</span> MyAnnotation&#123;</span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>下面是ElementType.TYPE_USE的用法<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.ElementType;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.Target;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Generic</span>&lt;<span class="meta">@MyAnnotation()</span> T&gt; &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">show</span><span class="params">()</span> <span class="keyword">throws</span> <span class="meta">@MyAnnotation</span> RuntimeException&#123;</span><br><span class="line">        ArrayList&lt;<span class="meta">@MyAnnotation</span> String&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> (<span class="meta">@MyAnnotation</span> <span class="type">int</span>) <span class="number">10L</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE_USE&#125;)</span></span><br><span class="line"><span class="meta">@interface</span> MyAnnotation&#123;</span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span> <span class="keyword">default</span> <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -538,7 +621,7 @@
           
             <a href="/tags/java/" rel="tag"># java</a>
           
-            <a href="/tags/java%E5%9F%BA%E7%A1%80/" rel="tag"># java基础</a>
+            <a href="/tags/java%E9%AB%98%E7%BA%A7%E7%89%B9%E6%80%A7/" rel="tag"># java高级特性</a>
           
         </div>
       
@@ -703,7 +786,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E4%BA%8E%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E7%9A%84%E6%B3%A8%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">用于文档生成的注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E4%BA%8E%E7%BC%96%E8%AF%91%E6%97%B6%E6%A0%BC%E5%BC%8F%E6%A3%80%E6%9F%A5%E7%9A%84%E6%B3%A8%E8%A7%A3"><span class="nav-number">2.</span> <span class="nav-text">用于编译时格式检查的注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E9%9D%A2%E8%BF%99%E6%AE%B5%E4%BB%A3%E7%A0%81%E5%B1%95%E7%A4%BA%E4%BA%86%E4%BB%A5%E4%B8%8A%E6%B3%A8%E8%A7%A3%E7%9A%84%E7%94%A8%E6%B3%95"><span class="nav-number">3.</span> <span class="nav-text">下面这段代码展示了以上注解的用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8%E4%BA%8E%E6%9B%BF%E4%BB%A3%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E6%B3%A8%E8%A7%A3"><span class="nav-number">4.</span> <span class="nav-text">用于替代配置文件的注解</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3"><span class="nav-number">1.</span> <span class="nav-text">一、常用注解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%94%A8%E4%BA%8E%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90%E7%9A%84%E6%B3%A8%E8%A7%A3"><span class="nav-number">1.1.</span> <span class="nav-text">1. 用于文档生成的注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%94%A8%E4%BA%8E%E7%BC%96%E8%AF%91%E6%97%B6%E6%A0%BC%E5%BC%8F%E6%A3%80%E6%9F%A5%E7%9A%84%E6%B3%A8%E8%A7%A3"><span class="nav-number">1.2.</span> <span class="nav-text">2. 用于编译时格式检查的注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E9%9D%A2%E8%BF%99%E6%AE%B5%E4%BB%A3%E7%A0%81%E5%B1%95%E7%A4%BA%E4%BA%86%E4%BB%A5%E4%B8%8A%E6%B3%A8%E8%A7%A3%E7%9A%84%E7%94%A8%E6%B3%95"><span class="nav-number">1.3.</span> <span class="nav-text">下面这段代码展示了以上注解的用法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%94%A8%E4%BA%8E%E6%9B%BF%E4%BB%A3%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84%E6%B3%A8%E8%A7%A3"><span class="nav-number">1.4.</span> <span class="nav-text">3. 用于替代配置文件的注解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E6%B3%A8%E8%A7%A3"><span class="nav-number">2.</span> <span class="nav-text">二、自定义注解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E5%85%83%E6%B3%A8%E8%A7%A3-meta-annotation"><span class="nav-number">3.</span> <span class="nav-text">三、元注解(meta-annotation)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AFJDK-8%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7"><span class="nav-number">3.1.</span> <span class="nav-text">以下是JDK 8的新特性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%8F%AF%E9%87%8D%E5%A4%8D%E6%B3%A8%E8%A7%A3"><span class="nav-number">4.</span> <span class="nav-text">四、可重复注解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3"><span class="nav-number">5.</span> <span class="nav-text">五、类型注解</span></a></li></ol></div>
             
 
           </div>
@@ -737,7 +820,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.7k</span>
+    <span title="Site words total count">9.8k</span>
   
 </div>
 
