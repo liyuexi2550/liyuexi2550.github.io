@@ -15,6 +15,114 @@
 ]]></content>
   </entry>
   <entry>
+    <title>【Java基础知识】注解</title>
+    <url>/2023/03/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E3%80%91%E6%B3%A8%E8%A7%A3/</url>
+    <content><![CDATA[<ul>
+<li>java在JDK1.5以后引入了注解(Annotation)的功能。</li>
+<li>注解主要用于说明代码的，是代码的特殊标记，因此是编译器和JVM可见的，而通常的注释是被编译器和JVM完全忽略的，这就是注解和注释的最主要区别。</li>
+<li>注解主要有三个方面的作用：分别是编写文档、编译检查、代码分析</li>
+<li>JavaSE中，注解作用有限，但在JavaEE中，作用很大，可以代替XML配置</li>
+</ul>
+<h3 id="用于文档生成的注解"><a href="#用于文档生成的注解" class="headerlink" title="用于文档生成的注解"></a>用于文档生成的注解</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>作用</th>
+<th>格式要求</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@author</td>
+<td>标明开发该类的作者</td>
+<td>@author 姓名/组织/邮箱</td>
+<td>多个作者之间用逗号隔开</td>
+</tr>
+<tr>
+<td>@version</td>
+<td>标明该类的版本</td>
+<td>@version 当前版本号</td>
+<td>————————</td>
+</tr>
+<tr>
+<td>@see</td>
+<td>标明相关联的类</td>
+<td>@see 类名/方法名</td>
+<td>可用于类和方法</td>
+</tr>
+<tr>
+<td>@since</td>
+<td>从哪个版本开始增加</td>
+<td>@since 创建日期/初始版本号</td>
+<td>————————</td>
+</tr>
+<tr>
+<td>@param</td>
+<td>对方法参数的说明</td>
+<td>@param 形参名 形参类型 形参说明</td>
+<td>1. 仅用于方法；2. 没有参数则不能写；3. 可并列多个</td>
+</tr>
+<tr>
+<td>@return</td>
+<td>对方法返回值的说明</td>
+<td>@return 返回值类型 返回值说明</td>
+<td>1. 仅用于方法；2.返回值是void则不能写</td>
+</tr>
+<tr>
+<td>@exception</td>
+<td>对方法可能抛出的异常进行说明</td>
+<td>@exception 异常类型 异常说明</td>
+<td>1. 仅用于方法；2.方法没有throws抛出则不能写；3. 可并列多个</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="用于编译时格式检查的注解"><a href="#用于编译时格式检查的注解" class="headerlink" title="用于编译时格式检查的注解"></a>用于编译时格式检查的注解</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>作用</th>
+<th>格式要求</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@Override</td>
+<td>限定重写父类方法</td>
+<td>@Override</td>
+<td>多个作者之间用逗号隔开</td>
+</tr>
+<tr>
+<td>@Deprecated</td>
+<td>表示所修饰元素已过时，通常因为所修饰的结构或存在更好的选择</td>
+<td>@Deprecated</td>
+<td>————————</td>
+</tr>
+<tr>
+<td>@SuppressWarnings</td>
+<td>抑制编译器警告</td>
+<td>@SuppressWarnings<br/>(“警告类型”)</td>
+<td>警告类型有deprecation、unchecked、fallthrough、path等</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="下面这段代码展示了以上注解的用法"><a href="#下面这段代码展示了以上注解的用法" class="headerlink" title="下面这段代码展示了以上注解的用法"></a>下面这段代码展示了以上注解的用法</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> LiYuexi</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@version</span> v0.1</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@see</span> Dog</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 7 March 2023</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Animal</span>&#123;</span><br><span class="line">    <span class="comment">//名字</span></span><br><span class="line">    <span class="meta">@SuppressWarnings(&quot;unused&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> name;</span><br><span class="line">    <span class="comment">//种类</span></span><br><span class="line">    <span class="meta">@SuppressWarnings(&quot;unused&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> species;</span><br><span class="line">    <span class="comment">//健康值</span></span><br><span class="line">    <span class="meta">@SuppressWarnings(&quot;unused&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> health;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> food</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">(String food)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal eats &quot;</span> + food);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">walk</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal walks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getHealth</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> health;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Deprecated</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">suicide</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Animal suicides&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span> <span class="keyword">extends</span> <span class="title class_">Animal</span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">eat</span><span class="params">(String food)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog eats &quot;</span> + food);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">walk</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog walks&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">play</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Dog plays something&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">attack</span><span class="params">()</span> <span class="keyword">throws</span> Exception&#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">health</span> <span class="operator">=</span> getHealth();</span><br><span class="line">        <span class="keyword">if</span>(health &lt; <span class="number">0</span>||health &gt; <span class="number">100</span>) <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Exception</span>();</span><br><span class="line">        <span class="keyword">if</span>(getHealth() &gt;= <span class="number">60</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="用于替代配置文件的注解"><a href="#用于替代配置文件的注解" class="headerlink" title="用于替代配置文件的注解"></a>用于替代配置文件的注解</h3><p>Servlet3.0提供了注解，使得不需要在web.xml文件中进行Servlet的配置<br><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>LoginServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>com.servlet.LoginServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>LoginServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/login<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure><br>使用@WebServlet注解替代上述冗长的XML配置信息，如下所示。<br><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@WebServlet(name = &quot;LoginServlet&quot;, value = &quot;/login&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">LoginServlet</span> <span class="keyword">extends</span> <span class="title class_">HttpServlet</span> &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">void</span> <span class="title function_">doPost</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> ServletException, IOException &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>java基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>my first post</title>
     <url>/2023/03/03/my-first-post/</url>
     <content><![CDATA[<p>This is my first post.I write the post to remember this exciting moment….</p>
@@ -292,29 +400,25 @@
 <p><center><b>图0-19 学习规律</b></center><br><br/></p>
 <h2 id="0-7-学习经验探讨"><a href="#0-7-学习经验探讨" class="headerlink" title="0.7 学习经验探讨"></a>0.7 学习经验探讨</h2><ul>
 <li>锻炼“双核”处理，边听边思考，边做“笔记”</li>
-<li><p>纸上得来终觉浅，绝知此事要躬行！</p>
-<ul>
+<li>纸上得来终觉浅，绝知此事要躬行！<ul>
 <li>第一层次：看得懂(依赖于视频、书、帖子)</li>
-<li><p>第二层次：练的熟(每天代码必须实现<strong>2-3遍</strong>)</p>
-<ul>
+<li>第二层次：练的熟(每天代码必须实现<strong>2-3遍</strong>)</li>
 <li>总结：<strong>三分看，七分练</strong></li>
-<li>建立行之有效的学习方法</li>
+</ul>
+</li>
+<li>建立行之有效的学习方法<ul>
 <li>学习编程的捷径：<strong>敲，狂敲</strong></li>
 <li><strong>“模仿”</strong> 好的编码习惯</li>
 <li>整理、回顾：<strong>每天花30min整理</strong></li>
 </ul>
 </li>
-</ul>
-</li>
 <li>一开始需要模仿</li>
 <li>知识变为技能，需要长时间的积累</li>
 <li>四种心态<ul>
-<li>不是“没听懂”，而是“记不住”<ul>
+<li>不是“没听懂”，而是“记不住”</li>
 <li>要为成功找理由，不为失败找借口</li>
 <li>战略上藐视“对手”，战术上重视“对手”</li>
 <li>“代码虐我千百遍，我视代码如初恋”</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
