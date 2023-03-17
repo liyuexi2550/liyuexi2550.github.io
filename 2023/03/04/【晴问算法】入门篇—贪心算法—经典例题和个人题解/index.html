@@ -367,6 +367,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2023/03/04/%E3%80%90%E6%99%B4%E9%97%AE%E7%AE%97%E6%B3%95%E3%80%91%E5%85%A5%E9%97%A8%E7%AF%87%E2%80%94%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E2%80%94%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98%E5%92%8C%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2023/03/04/%E3%80%90%E6%99%B4%E9%97%AE%E7%AE%97%E6%B3%95%E3%80%91%E5%85%A5%E9%97%A8%E7%AF%87%E2%80%94%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E2%80%94%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98%E5%92%8C%E4%B8%AA%E4%BA%BA%E9%A2%98%E8%A7%A3/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -924,10 +934,8 @@ setInterval("createtime()",250);
 <!-- LOCAL: You can save these files to your site and update links -->
     
         
-        <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-        <script src="https://billts.site/js/gitment.js"></script>
-        <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"> -->
-        <!-- <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
     
 <!-- END LOCAL -->
 
@@ -936,10 +944,12 @@ setInterval("createtime()",250);
     
       <script type="text/javascript">
       function renderGitment(){
-        var gitment = new Gitment({
+        var gitment = new Gitmint({
             id: window.location.pathname, 
             owner: 'liyuexi2550',
             repo: 'liyuexi2550.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
             oauth: {
             
