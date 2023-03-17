@@ -509,8 +509,7 @@
   
     <div class="comments" id="comments">
       
-        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
-        <div id="gitment-container" style="display:none"></div>
+        <div id="gitment-container"></div>
       
     </div>
 
@@ -832,8 +831,10 @@ setInterval("createtime()",250);
 <!-- LOCAL: You can save these files to your site and update links -->
     
         
-        <link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-        <script src="https://jjeejj.github.io/js/gitment.js"></script>
+        <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
+        <script src="https://billts.site/js/gitment.js"></script>
+        <!-- <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"> -->
+        <!-- <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script> -->
     
 <!-- END LOCAL -->
 
@@ -858,11 +859,7 @@ setInterval("createtime()",250);
       }
 
       
-      function showGitment(){
-        document.getElementById("gitment-display-button").style.display = "none";
-        document.getElementById("gitment-container").style.display = "block";
-        renderGitment();
-      }
+      renderGitment();
       
       </script>
     
