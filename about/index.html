@@ -322,7 +322,9 @@
           
 
   
-    <div id="gitalk-container"></div>
+    <div class="comments" id="comments">
+    </div>
+
   
 
 
@@ -640,23 +642,29 @@ setInterval("createtime()",250);
 
 
 
-
-
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <div id="gitalk-container"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
   <script type="text/javascript">
-    var gitalk = new Gitalk({
-      clientID: '2b0fb7796cdfd853d605',
-      clientSecret: '01d27eadb5b0b8ed413cdebf1180f74d1346b8d5',
-      repo: 'hexo_blog_comment',
-      owner: 'liyuexi2550',
-      admin: ['liyuexi2550'],
-      id: location.pathname,
-      distractionFreeMode: 'false'
-    })
-    gitalk.render('gitalk-container')
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'jkSffg5AE40HeHMX5CvSSh3m-gzGzoHsz',
+        appKey: 'mzb54B1iqKSsRjjTUXxe1vRY',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
   </script>
+
+
 
 
   
